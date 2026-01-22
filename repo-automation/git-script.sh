@@ -56,3 +56,10 @@ commmand -v python3 >/dev/null 2>&1 || {
 
 ./python.py
 
+
+
+
+#
+current_branch="$(git branch | grep \* | awk '{print $2}')"
+echo "your current branch is $current_branch."
+
