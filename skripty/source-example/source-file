@@ -1,0 +1,21 @@
+
+#put first argument into variable env
+env="$1"
+echo "your 1st arg is stored in local/tempore=ary var called 'env' "
+
+#run env comd - show env var in current CLI
+#get PWD var and value form env var in current CLI
+env | grep -i pwd
+
+#show env var calle 'PWD' from current CLI
+echo $PWD
+
+#create new env var in current CLI
+export MY_VARIABLE='my_value'
+
+echo "showing added env var"
+env | grep -i my_variable
+
+#create alias in currect CLI bash sesh
+alias msc='echo "used alias for my short command" '
+echo "now you can use alias 'msc' untill you quit this cli"
